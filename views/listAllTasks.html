@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid rgba(209, 14, 235, 0.945);
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="myStyle.css">
+</body>
+<body>
+    <h1> <br>
+        Welcome
+
+    </h1>
+    </br>
+    <h3>The current items on your to do list are:
+        <table>
+            <tr>
+                <td>Task Name</td>
+                <td>Task Due Date</td>
+                <td>Task Description</td>
+            </tr>
+            <% for ( var i =0; i< toDo.length;i++){ %>
+            <tr>
+                <td>
+                    <%= toDo[i].taskName %>
+                </td>
+                <td>
+                    <%= toDo[i].taskDueDate %>
+                </td>
+                <td>
+                    <%= toDo[i].taskDesc %>
+                </td>
+            </tr>
+            <% }%>
+    </h3>
+
+</body>
+
+</html>
